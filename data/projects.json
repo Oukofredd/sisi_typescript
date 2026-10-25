@@ -1,0 +1,11 @@
+[
+    { "id": "JUJ-001", "title": "Street lights along Gachororo Road", "ward": "Juja",
+    "budgetKes": 4500000, "status": "proposed", "closesOn": "2026-10-31" },
+    { "id": "JUJ-002", "title": "Borehole at the Juja Farm market", "ward": "Juja",
+    "budgetKes": 2800000, "status": "approved" },
+    { "id": "WIT-001", "title": "Early childhood classroom block", "ward": "Witeithie",
+    "budgetKes": 6200000, "status": "in-progress" },
+    { "id": "BAD-001", "title": "A broken row", "ward": "Juja",
+    "budgetKes": "lots", "status": "pending" }
+
+]

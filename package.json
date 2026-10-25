@@ -1,0 +1,25 @@
+
+{
+  "name": "sisitype",
+  "version": "1.0.0",
+  "description": "Migori Ni SISI - TypeScript civic participation website",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "check": "tsc --noEmit",
+    "serve": "serve ."
+  },
+  "keywords": [
+    "typescript",
+    "civic-participation",
+    "sisi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "typescript": "^7.0.2"
+  }
+}

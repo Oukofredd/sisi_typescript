@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Register to explore community participation in Kiambu County."
+  >
+
+  <title>Register | Kiambu Ni SISI</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Main navigation -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        Kiambu Ni SISI
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Navigation menu"
+      >
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="register.html">Register</a>
+        <a href="participate.html">Participate</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Registration page -->
+  <main class="page-main">
+    <div class="container narrow-container">
+
+      <div class="page-heading">
+        <p class="eyebrow">JOIN THE COMMUNITY</p>
+        <h1>Register your details</h1>
+        <p>
+          Register to explore community projects and participation
+          opportunities in Kiambu County.
+        </p>
+      </div>
+
+      <!-- Lab 6: TypeScript form handling -->
+      <form id="register-form" class="form-card">
+
+        <!-- Resident's full name -->
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+
+          <input
+            id="full-name"
+            name="fullName"
+            type="text"
+            autocomplete="name"
+            placeholder="Enter your full name"
+            required
+          >
+        </div>
+
+        <!-- Kenyan mobile number -->
+        <div class="form-group">
+          <label for="phone">Mobile number</label>
+
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autocomplete="tel"
+            placeholder="e.g. 0712 345 678"
+            aria-describedby="phone-help"
+            required
+          >
+
+          <small id="phone-help" class="field-help">
+            Enter a Kenyan mobile number, for example 0712 345 678.
+          </small>
+        </div>
+
+        <!-- Ward selection: options are populated by TypeScript -->
+        <div class="form-group">
+          <label for="ward">Ward</label>
+
+          <select id="ward" name="ward" required>
+            <option value="">Choose your ward</option>
+          </select>
+        </div>
+
+        <!-- Privacy consent -->
+        <label class="consent-row">
+          <input
+            type="checkbox"
+            name="consent"
+            value="yes"
+            required
+          >
+
+          <span>
+            I agree that Sisi may process my details as described in the
+            <a href="privacy.html">privacy notice</a>.
+          </span>
+        </label>
+
+        <!-- Submits the form for TypeScript validation -->
+        <button
+          class="button button-primary button-full"
+          type="submit"
+        >
+          Register
+        </button>
+
+        <!-- TypeScript displays validation and success messages here -->
+        <p
+          id="form-status"
+          class="status-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <p class="form-footnote">
+          This is a learning demonstration. Registration details are
+          not sent to a server or saved to a database.
+        </p>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        Kiambu Ni SISI
+      </a>
+
+      <p>Learning project for community participation.</p>
+      <p>© 2026 Kiambu Ni SISI · Demonstration website</p>
+    </div>
+  </footer>
+
+  <!-- Load JavaScript generated from src/register.ts -->
+  <script type="module" src="scripts/register.js"></script>
+</body>
+</html>
